@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./website/Navbar";
+import HomePage from "./website/HomePage";
+import "./App.css";
+import { useState } from "react";
+import { data } from "./data/product-data";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Product from "./website/Product";
+import Cart from "./website/Cart";
+import Checkout from "./website/Checkout";
+import Footer from "./website/Footer";
+import About from "./website/About";
+import Contact from "./website/Contact";
 
 function App() {
+  const [product, setProduct] = useState(data);
+  const [cart, setCart] = useState([]);
+  const [checkout, setCheckout] = useState([]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage setProduct={setProduct} product={product} />}
+          />
+          <Route
+            path="/product"
+            element={
+              <Product product={product} cart={cart} setCart={setCart} />
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                setCart={setCart}
+                checkout={checkout}
+                setCheckout={setCheckout}
+              />
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/checkout" element={<Checkout checkout={checkout} />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

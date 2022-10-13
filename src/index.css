@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,479 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #FFFFFF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navy {
+
+  background: #FFFFFF;
+  padding: 0 0;
+  margin: 0 0;
+
+
+}
+
+.nave {
+  background-color: #FFFFFF;
+  padding: 0 0;
+  margin: 0 0;
+
+
+}
+
+.App {
+  padding: 0 0;
+
+}
+
+.hero {
+  margin-top: 0;
+  min-height: 91vh;
+  border: 1px solid white;
+  background: url('./photos/carousel/img_1.png');
+}
+
+.hero article {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.hero p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.hero button {
+  background: inherit;
+  width: 175.16px;
+  height: 58px;
+  left: 928.66px;
+  top: 448px;
+  color: #FFFFFF;
+
+  border: 5px solid #FFFFFF;
+}
+
+.new-arrivals {
+  margin-bottom: 48px;
+  margin-top: 36px;
+}
+
+.new-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-arrivals h4 {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* heading */
+
+  color: #1D1D1D;
+}
+
+.arrive a {
+  text-decoration: none;
+}
+
+.arrive a h4 {
+  font-family: 'Baloo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 25px;
+  color: #1D1D1D;
+}
+
+.arrive a p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #024E82;
+}
+
+
+
+.new-arrivals p {
+
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  /* identical to box height, or 240% */
+
+  text-align: center;
+
+  /* text */
+
+  color: #555555;
+}
+
+.product {
+  padding-top: 7%;
+}
+
+.product .main-pic {
+  width: 34.375em;
+
+  height: 100vh;
+}
+
+.product h2 {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.product .desc {
+  text-align: left;
+
+}
+
+.product .stars {
+  height: 6.5625em;
+  width: 9em;
+}
+
+.product .price {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primary */
+
+  color: #024E82;
+}
+
+.product .prices {
+  display: flex;
+  flex-direction: row;
+}
+
+.product .old-price {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  margin-right: 2%;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: line-through;
+
+  color: #818181;
+}
+
+.product-texts {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* text */
+
+  color: #555555;
+}
+
+.select-size {
+  width: 13.125em;
+  height: 48px;
+  border: 1px solid #fbfbfb;
+  background: #fbfbfb;
+
+}
+
+.product button {
+  display: block;
+  margin-top: 36px;
+  background: #024E82;
+  width: 165px;
+  height: 48px;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.product .CandT {
+  margin-top: 32px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+
+  /* heading */
+
+  color: #1D1D1D;
+  text-transform: capitalize;
+}
+
+.product .description {
+
+  margin-top: 255px;
+  width: 90%;
+}
+
+.product .description article {
+  text-align: left;
+
+}
+
+.product .description article span {
+  border: 1px solid #fbfb;
+  /* width: 136px;
+  height: 56px; */
+  padding: 19px 19px;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  /* identical to box height */
+
+
+
+
+  /* heading */
+
+  color: #1D1D1D;
+}
+
+.product .description article .reviews {
+  color: #818181;
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.product .description p {
+  padding: 48px 48px;
+  text-align: left;
+  border: 1px solid #f7f7f7;
+}
+
+.cart-section {
+  padding-top: 7%;
+}
+
+/* .checkout-order {
+  padding-top: 7%;
+} */
+
+.both {
+  clear: both;
+}
+
+.checkout {
+  padding-top: 7%;
+}
+
+.checkout-order h2 {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+
+
+  /* heading */
+
+  color: #1D1D1D;
+}
+
+.checkout-order button {
+  width: 166px;
+  height: 48px;
+  float: right;
+  margin-bottom: 3%;
+}
+
+.checkout-order .last-p {
+  margin: 1% auto 3%;
+  width: 90%;
+
+}
+
+.billing p {
+  color: #bfbfbf;
+}
+
+.billing>input {
+  width: 50%;
+  border: 1px solid #959595;
+}
+
+.checkout-order p {
+  color: #1D1D1D;
+}
+
+footer {
+  margin-top: 5%;
+  background: #fbfbfb;
+  min-height: 29.8125em;
+}
+
+footer {
+  padding-top: 4.375em;
+}
+
+footer .copy-right {
+  margin-top: 6.25em;
+}
+
+footer .s {
+
+  width: 7.7625em;
+
+}
+
+footer .s h5 {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11.5px;
+  line-height: 14px;
+
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+footer .s article {
+  text-align: left;
+}
+
+footer input {
+
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.about-section {
+  padding-top: 7%;
+}
+
+.contact-section {
+  padding-top: 3%;
+}
+
+.contact-section-bg {
+  height: 348px;
+  width: 100%;
+  background: url('./photos/contact/contact_bg.jpg');
+  /* background: url('./photos/carousel/img_1.png'); */
+}
+
+.contact-section-bg {
+  display: flex;
+
+  color: white;
+}
+
+.contact-section-bg h2 {
+  margin-top: 20%;
+  margin-left: 2%;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px
+}
+
+.contact-section form {
+  margin-top: 10%;
+
+
+
+}
+
+.contact-section form input {
+  width: 100%;
+}
+
+.contact-section form .message {
+  min-height: 12.75em;
+}
+
+.contact-section form button {
+  margin-top: 1.5em;
+}
+
+.contact-section form h2 {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.contact-section form p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* text */
+
+  color: #555555;
+}
+
+.contact-section form label {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+
+  /* text */
+
+  color: #555555;
 }
