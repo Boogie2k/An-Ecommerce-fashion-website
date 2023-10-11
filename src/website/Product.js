@@ -45,7 +45,7 @@ const ProductPage = ({ product, cart, setCart }) => {
       <section className="container-fluid  product">
         {/* <div className="container"> */}
         <div className="row">
-          <article className="col-md-12 col-lg-6">
+          <article className="col-lg-12 col-xl-6">
             <img className="main-pic" src={product.image} alt="" />
           </article>
           <article className="col-md-12 col-lg-6 desc">

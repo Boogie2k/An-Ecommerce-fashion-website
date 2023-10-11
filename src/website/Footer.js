@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="container-fluid bg-#fbfbfb">
       <div className="row">
-        <div className="col-3">
+        <div className="  col-md-3 col-6">
           <div className="container s">
             <h5>Company info</h5>{" "}
             <article className=" ">
@@ -16,7 +16,7 @@ const Footer = () => {
             </article>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-md-3 col-6">
           <div className="container s">
             <h5>Company info</h5>{" "}
             <article className=" ">
@@ -28,7 +28,7 @@ const Footer = () => {
             </article>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-md-3 col-6">
           <div className="container s">
             <h5>Company info</h5>{" "}
             <article className=" ">
@@ -40,7 +40,7 @@ const Footer = () => {
             </article>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-md-3 col-6">
           <div className="container">
             <h5>Get in the know</h5>{" "}
             <article className=" ">
@@ -52,7 +52,7 @@ const Footer = () => {
 
       <div className="container copy-right ">
         <hr className=""></hr>
-        <div className="col-3">
+        <div className="col-md-3 col-12">
           <article style={{ textAlign: "left" }}>
             &copy; 2022 NorthStar ecommerce
             <article className="d-flex">
